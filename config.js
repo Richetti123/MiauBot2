@@ -14,7 +14,7 @@ import { en, es, id, ar, pt } from "./lib/idiomas/total-idiomas.js"
 // [EN] > Add the number that will be Bot and those that will be owners.
 global.owner = [
 ["56928561853", 'MichiBot', true], //MichiBot🐈
-["56941827124"], 
+["56944317230"], 
 ["56928561853"], 
 ["56941827124"],
 ['56941827124'],
@@ -131,9 +131,9 @@ global.moment = moment
 // [ES] > Agregate a ti, colaboradores o ayudates, aparecerá en el comando de lista de contactos.
 // [EN] > Adding yourself, collaborators or helpers will appear in the contact list command.
 global.official = [ // Agregate si eres Owner
-["56941827124", 'MichiBot', 1], 
-["56941827124", 'MichiBot', 1],  
-["56928561853", 'MichiBot', 1]]
+["56941827124", 'MiauBot', 1], 
+["56941827124", 'MiauBot', 1],  
+["56928561853", 'MiauBot', 1]]
 
 global.mail = '' // Add email
 global.desc = '' // Add short description (20 caractres max)
@@ -141,8 +141,8 @@ global.desc2 = '' // Add long description (90 caractres max) (Este parámetro se
 global.country = '' // Add country, example: 🇪🇨
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 
-global.packname = `MichiBot` //"MichiBot"
-global.author = `MichiBot` //"MichiBot"
+global.packname = `MiauBot` //"MichiBot"
+global.author = `MiauBot` //"MichiBot"
 
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 // [ES] > INFORMACIÓN DE VERSIONES DEL BOT, POR FAVOR 
@@ -150,7 +150,7 @@ global.author = `MichiBot` //"MichiBot"
 // [EN] > BOT VERSION INFORMATION, PLEASE KEEP THIS UNCHANGED, WE STRIVE DAILY TO PROVIDE YOU WITH A BOT FOR THE COMMUNITY, BE GRATEFUL
 global.vs = "1.7.0"
 global.vsJB = "3.0 (Beta)"
-global.gt = "MichiBot"
+global.gt = "MiauBot"
 
 fetchDataAndProcess().catch(error => console.error('Ocurrió un error:', error))
 
@@ -444,7 +444,7 @@ import(`${file}?update=${Date.now()}`);
 })
 
 async function fetchDataAndProcess() {
-const response = await fetch('https://raw.githubusercontent.com/Richetti123/MichiBot6/master/official_accounts.json')
+const response = await fetch('https://raw.githubusercontent.com/Richetti123/MiauBot2/master/official_accounts.json')
 const data = await response.json() 
 let { accounts, channels, groups, collaboration, sponsors, others } = data.info
 
